@@ -1,0 +1,104 @@
+.ps-4 {
+    padding-left: 0rem !important; /* Adjust the value as needed */
+  }
+
+  .heading{
+         font-size: 3rem;
+         font-weight: 700;
+           font-family: 'Montserrat', sans-serif;
+         
+          
+      
+   
+  }
+
+  .para {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: 'Montserrat', sans-serif;
+      text-align: justify;
+      line-height: 26px;
+  }
+  
+  .example-class::after, .example-class::before {
+    display: none !important; /* Remove the pseudo-element */
+  }
+  
+  .gradient {
+          background: linear-gradient(90deg, #1F78BD 0%, #000000 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+         
+      }
+  
+      .gradient-color {
+          background: linear-gradient(90deg, #1F78BD 0%, #000000 100%);
+      }
+      /* .gradient-border {
+       border: 4px solid;
+       border-image: linear-gradient(90deg, #1F78BD 0%, #000000 100%);
+       border-image-slice: 1;
+       radius: 95px;
+   } */
+
+
+
+   @media only screen and (min-width: 768px) and (max-width: 1365px) {
+    p.custom-margin {
+        margin-bottom: 220px !important;
+    }
+   .custom-length {
+      height: 380px !important;
+      width: 200px !important;
+      margin-top: 50px !important;
+      margin-left: -20px !important;
+      
+      
+      
+  }
+  .img-length{
+      height: 45rem !important;
+      
+  }
+  .img-width{
+      width: 20rem !important;
+      height: 25rem !important;
+  }
+  .font{
+      font-size: 55px !important;
+      
+  }
+  .img-size{
+      width: 5rem !important;
+  }
+}
+   
+
+
+
+/* Media query for iPad Pro version */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  p.custom-margin {
+      margin-bottom: 180px !important; /* Adjusted for better spacing on iPad Pro */
+  }
+
+  .custom-length {
+      height: 420px !important;  /* Slightly larger height for iPad Pro */
+      width: 240px !important;   /* Wider width for better scaling */
+      margin-top: 60px !important;
+      margin-left: -15px !important;
+  }
+
+  .img-length {
+      height: 40rem !important; /* Increased height for better appearance on larger screens */
+   
+  }
+
+  .img-width {
+      width: 25rem !important;  /* Adjusted width for better scaling */
+      height: 28rem !important; /* Adjusted height */
+  }
+  .form {
+    margin-bottom: 250px !important;
+  }
+}

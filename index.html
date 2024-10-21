@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+
+
+    <!-- FontAwesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/home-page/cut logo.png" sizes="32x32">
+
+
+</head>
+
+<body>
+
+
+
+    <!-- Navbar -->
+
+
+
+
+
+
+    <!-- Hero Section -->
+
+    <div id="heroSection" class=""
+        style="position: relative; height: 80vh; margin-top: 0; background-color: transparent;">
+        <nav class="navbar navbar-expand-lg navbar-light rounded-4"
+            style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 90%; z-index: 1; background-color: #ffffff;">
+            <div class="container-fluid">
+                <!-- Logo Section -->
+                <a class="navbar-brand d-none d-lg-block" href="#">
+                    <img src="assets/home-page/logo-brook.png" alt="Logo" height="50" width="250"
+                        style="object-fit: cover;">
+                </a>
+                <a class="navbar-brand d-block d-lg-none" href="#">
+                    <img src="assets/home-page/logo-brook.png" alt="Logo" height="50" width="150"
+                        style="object-fit: cover;">
+                </a>
+
+                <!-- Toggle button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link  rounded-3 px-3 mx-3" href="index.html"
+                                onmouseover="this.style.background = 'linear-gradient(90deg, #1F78BD 0%, #000000 100%)'; this.style.color = 'white'; this.style.borderRadius = '0.3rem';"
+                                onmouseout="this.style.background = 'transparent'; this.style.color = 'black'; this.style.borderRadius = '0';">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="about-us.html"
+                                onmouseover="this.style.background = 'linear-gradient(90deg, #1F78BD 0%, #000000 100%)'; this.style.color = 'white'; this.style.borderRadius = '0.3rem';"
+                                onmouseout="this.style.background = 'transparent'; this.style.color = 'black'; this.style.borderRadius = '0';"
+                                style="background-color: transparent; color: black;">About Us</a>
+                        </li>
+
+                        <!-- Dropdown for Our Divisions -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle rounded-3 px-3 mx-3 d-none d-lg-flex example-class"
+                                href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style=" color: rgb(0, 0, 0);">
+                                Our Divisions
+                            </a>
+                            <a class="nav-link dropdown-toggle rounded-3 px-3 mx-3  d-block d-lg-none ps-4 example-class"
+                                href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style=" color: rgb(0, 0, 0);">
+                                Our Divisions
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./our divisions/fcs.html"
+                                        onmouseover="this.style.background = 'linear-gradient(90deg, #1F78BD 0%, #000000 100%)'; this.style.color = 'white'; this.style.borderRadius = '0.3rem';"
+                                        onmouseout="this.style.background = 'transparent'; this.style.color = 'black'; this.style.borderRadius = '0';">Flow
+                                        Control Systems</a></li>
+                                <li><a class="dropdown-item" href="./our divisions/electrical.html"
+                                        onmouseover="this.style.background = 'linear-gradient(90deg, #1F78BD 0%, #000000 100%)'; this.style.color = 'white'; this.style.borderRadius = '0.3rem';"
+                                        onmouseout="this.style.background = 'transparent'; this.style.color = 'black'; this.style.borderRadius = '0';">Electrical
+                                        Solutions</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="contact-us.html"
+                                onmouseover="this.style.background = 'linear-gradient(90deg, #1F78BD 0%, #000000 100%)'; this.style.color = 'white'; this.style.borderRadius = '0.3rem';"
+                                onmouseout="this.style.background = 'transparent'; this.style.color = 'black'; this.style.borderRadius = '0';"
+                                style="background-color: transparent; color: black;">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Image and Caption -->
+        <div id="heroContent" class="position-relative text-center" style="height: 100%;">
+            <img id="heroImage" src="assets/home-page/hero1.jpg" class="d-block w-100" alt="Hero Image"
+                style="height: 100%; object-fit: cover; opacity: 1; transition: opacity 1s ease-in-out;">
+            <!-- For large screens -->
+            <!-- Larger screens (desktops, laptops) -->
+            <div
+                class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 d-none d-lg-flex">
+                <h1 id="heroCaption" class="text-white" style="font-size: 100px; font-weight: bold; 
+          ">INNOVATION</h1>
+            </div>
+
+            <!-- Smaller screens (tablets and below) -->
+            <div
+                class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100 d-flex d-lg-none">
+                <h1 id="heroCaption" class="text-white" style="font-size: 50px; font-weight: bold;">INNOVATION</h1>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- Our Divisions Section -->
+        <div class="container my-3">
+            <h2 class="text-center gradient  p-5" style="font-weight: 700; margin-bottom: 30px; font-size: 4rem; margin-top:-20px; font-family: 'Montserrat', sans-serif;">Our Divisions</h2>
+            <div class="row text-center" style="display: flex; align-items: stretch;">
+                <!-- Flow Control Systems -->
+                <div class="col-md-3" style="margin-bottom: 20px;">
+                    <img src="assets/home-page/our-div-1.png" alt="Flow Control Systems"
+                        style="width: 100%; height: 250px; object-fit: cover; border-radius: 15px;">
+                    <h5 class="gradient"
+                        style="border-left: 3px solid #007bff; border-right: 3px solid #007bff; border-bottom: 3px solid #007bff; padding: 10px 0; margin-top: 15px; border-radius: 0 0 15px 15px;">
+                        Flow Control Systems</h5>
+                </div>
+                <!-- Expertise in Steel Product Trading -->
+                <div class="col-md-3" style="margin-bottom: 20px;">
+                    <img src="assets/home-page/our-div-2.jpeg" alt="Expertise in Steel Product Trading"
+                        style="width: 100%; height: 250px; object-fit: cover; border-radius: 15px;">
+                    <h5 class="gradient"
+                        style="border-left: 3px solid #007bff; border-right: 3px solid #007bff; border-bottom: 3px solid #007bff; padding: 10px 0; margin-top: 15px; border-radius: 0 0 15px 15px;">
+                        Expertise in Steel Product </h5>
+                </div>
+                <!-- Comprehensive Solutions -->
+                <div class="col-md-3" style="margin-bottom: 20px;">
+                    <img src="assets/home-page/our-div-3.jpeg" alt="Comprehensive Solutions"
+                        style="width: 100%; height: 250px; object-fit: cover; border-radius: 15px;">
+                    <h5 class="gradient"
+                        style="border-left: 3px solid #007bff; border-right: 3px solid #007bff; border-bottom: 3px solid #007bff; padding: 10px 0; margin-top: 15px; border-radius: 0 0 15px 15px;">
+                        Comprehensive Solutions</h5>
+                </div>
+                <!-- Electrical Solutions -->
+                <div class="col-md-3" style="margin-bottom: 20px;">
+                    <img src="assets/home-page/our-div-4.jpeg" alt="Electrical Solutions"
+                        style="width: 100%; height: 250px; object-fit: cover; border-radius: 15px;">
+                    <h5 class="gradient"
+                        style="border-left: 3px solid #007bff; border-right: 3px solid #007bff; border-bottom: 3px solid #007bff; padding: 10px 0; margin-top: 15px; border-radius: 0 0 15px 15px;">
+                        Electrical Solutions</h5>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Product Range Section -->
+        <!-- Product Range Section -->
+        <div class="text-center  my-3">
+            <h3 class="text-center mb-3 p-5 gradient"
+                style="font-weight: 700; margin-bottom: 30px; font-size: 60px; margin-top:-30px; font-family: 'Montserrat', sans-serif;">
+                Product Range</h3>
+            <div id="scroll-container" class="mx-auto" style="max-width: 85%; overflow: hidden; position: relative;">
+                <div id="scroll-content" style="display: flex; width: max-content;">
+                    <div class="product" style="flex: 0 0 auto; margin-right: 20px; text-align: center; width: 300px;">
+                        <img src="assets/home-page/product-1.png" class="img-fluid" alt="Pipes"
+                            style="width: 100%; height: 380px; object-fit: cover; border-radius: 5px;">
+                        <h5 class="mt-2 gradient "
+                            style="border: 2px solid #ccc; border-radius: 15px; display: inline-block; padding: 15px 110px;">
+                            Pipes</h5>
+                    </div>
+                    <div class="product" style="flex: 0 0 auto; margin-right: 20px; text-align: center; width: 300px;">
+                        <img src="assets/home-page/product-2.jpeg" class="img-fluid" alt="Valves"
+                            style="width: 100%; height: 380px; object-fit: cover; border-radius: 5px;">
+                        <h5 class="mt-2 gradient"
+                            style="border: 2px solid #ccc; border-radius: 15px; display: inline-block; padding: 15px 110px;">
+                            Valves</h5>
+                    </div>
+                    <div class="product" style="flex: 0 0 auto; margin-right: 20px; text-align: center; width: 300px;">
+                        <img src="assets/home-page/product-3.png" class="img-fluid" alt="Flanges"
+                            style="width: 100%; height: 380px; object-fit: cover; border-radius: 5px;">
+                        <h5 class="mt-2 gradient"
+                            style="border: 2px solid #ccc; border-radius: 15px; display: inline-block; padding: 15px 110px;">
+                            Flanges</h5>
+                    </div>
+                    <div class="product" style="flex: 0 0 auto; margin-right: 20px; text-align: center; width: 300px;">
+                        <img src="assets/home-page/product-4.png" class="img-fluid" alt="Fittings"
+                            style="width: 100%; height: 380px; object-fit: cover; border-radius: 5px;">
+                        <h5 class="mt-2 gradient"
+                            style="border: 2px solid #ccc; border-radius: 15px; display: inline-block; padding: 15px 110px;">
+                            Fittings</h5>
+                    </div>
+                    <!-- Duplicate products for seamless scroll loop -->
+                    <div class="product" style="flex: 0 0 auto; margin-right: 20px; text-align: center; width: 300px;">
+                        <img src="assets/home-page/product-1.png" class="img-fluid" alt="Pipes"
+                            style="width: 100%; height: 380px; object-fit: cover; border-radius: 5px;">
+                        <h5 class="mt-2 gradient"
+                            style="border: 2px solid #ccc; border-radius: 15px; display: inline-block; padding: 15px 110px;">
+                            Pipes</h5>
+                    </div>
+                    <div class="product" style="flex: 0 0 auto; margin-right: 20px; text-align: center; width: 300px;">
+                        <img src="assets/home-page/product-2.jpeg" class="img-fluid" alt="Valves"
+                            style="width: 100%; height: 380px; object-fit: cover; border-radius: 5px;">
+                        <h5 class="mt-2 gradient"
+                            style="border: 2px solid #ccc; border-radius: 15px; display: inline-block; padding: 15px 110px;">
+                            Valves</h5>
+                    </div>
+                    <div class="product" style="flex: 0 0 auto; margin-right: 20px; text-align: center; width: 300px;">
+                        <img src="assets/home-page/product-3.png" class="img-fluid" alt="Flanges"
+                            style="width: 100%; height: 380px; object-fit: cover; border-radius: 5px;">
+                        <h5 class="mt-2 gradient"
+                            style="border: 2px solid #ccc; border-radius: 15px; display: inline-block; padding: 15px 110px;">
+                            Flanges</h5>
+                    </div>
+                    <div class="product" style="flex: 0 0 auto; margin-right: 20px; text-align: center; width: 300px;">
+                        <img src="assets/home-page/product-4.png" class="img-fluid" alt="Fittings"
+                            style="width: 100%; height: 380px; object-fit: cover; border-radius: 5px;">
+                        <h5 class="mt-2 gradient"
+                            style="border: 2px solid #ccc; border-radius: 15px; display: inline-block; padding: 15px 110px;">
+                            Fittings</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Contact Section -->
+        <div class="container  d-none d-lg-block" style="margin-bottom: -200px; margin-top: 70px; ">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <h2 class="gradient"
+                        style="font-size: 100px; margin-bottom: 40px; font-weight: 800; margin-left: 50px;">Reach <br>
+                        Out Us</h2>
+                    <p style="font-size: larger;  margin-bottom: 280px; margin-left: 52px;">Need with something? <br>
+                        Get in touch with our friendly team <br> and we’ll get in touch within 24 hours.</p>
+                </div>
+                <div class="col-md-7  form">
+                    <form class="p-4 rounded shadow" style="background-color: #f9f9f9;">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">What you want to say?</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Write message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn gradient-color text-white">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <<div class="container  d-block d-lg-none" style="margin-bottom: -220px; margin-top: 70px; ">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <h2 class="gradient"
+                        style="font-size: 70px; margin-bottom: 40px; font-weight: 800; margin-left: 50px;">
+                        Reach <br> Out Us
+                    </h2>
+                    <p class="custom-margin"
+                        style="font-size: large; margin-bottom: 30px; margin-left: 52px; font-family: 'Montserrat', sans-serif;">
+                        Need with something? <br> Get in touch with our friendly team <br> and we’ll get in touch within
+                        24 hours.
+                    </p>
+                </div>
+                <div class="col-md-7" style="margin-bottom: 250px;">
+                    <form class="p-4 rounded shadow" style="background-color: #f9f9f9;">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">What you want to say?</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Write message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn gradient-color text-white">Send Message</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center y-5 p-5 d-none d-xl-block "
+        style=" z-index: -1; background: linear-gradient(174deg, rgba(31,120,189,1) 0%, rgba(14,55,87,1) 100%); ">
+        <!-- <div class="container-xxl"> -->
+
+        <div class="d-flex flex-row justify-content-between px-5 mb-5" style="margin-top: 5rem;">
+            <div class="d-flex flex-column align-items-center justify-content-between w-25">
+                <img src="./assets/logo new-01.png" class="img-fluid" alt="">
+                <div class="d-flex ">
+                    <a href="#" class="text-white mx-3"><i class="fab fa-linkedin fs-1"></i></a>
+                    <a href="#" class="text-white mx-3"><i class="fab fa-instagram fs-1"></i></a>
+                    <a href="#" class="text-white mx-3"><i class="fab fa-twitter fs-1"></i></a>
+                    <a href="#" class="text-white mx-3"><i class="fab fa-facebook fs-1"></i></a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around gap-5 align-items-center">
+                <div class="d-flex flex-column gap-1 align-items-start">
+                    <h3 class="mb-2 fw-bold">Other pages</h3>
+                    <a class="text-decoration-none text-white " href="">Home</a>
+                    <a class="text-decoration-none text-white " href="">About us</a>
+                    <a class="text-decoration-none text-white " href="">Our divisions</a>
+                    <a class="text-decoration-none text-white " href="">Contact us</a>
+                </div>
+                <div class="d-flex flex-column gap-1 align-items-start">
+                    <h3 class="mb-2 fw-bold">Quick Links</h3>
+                    <a class="text-decoration-none text-white " href="">Privacy policy</a>
+                    <a class="text-decoration-none text-white " href="">Terms and conditions</a>
+                    <a class="text-decoration-none text-white " href="">Disclimer</a>
+                    <a class="text-decoration-none text-white " href="">FAQ</a>
+                </div>
+                <div class="d-flex flex-column gap-1 align-items-start">
+                    <h3 class="mb-2 fw-bold">Contact Info</h3>
+                    <a class="text-decoration-none text-white " href="">info@brook-me.com</a>
+                    <a class="text-decoration-none text-white " href="">sales@brook-me.com</a>
+                    <a class="text-decoration-none text-white " href="">Disclimer</a>
+                    <a class="text-decoration-none text-white " href="">FAQ</a>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <hr class="border-light mx-auto" style="width: 80%;">
+        <p class="mb-0">© Copyright 2024 All Rights Reserved by Brook-me</p>
+    </footer>
+
+    <!-- for tab and other  -->
+    <footer class="bg-dark text-white text-center y-5 py-5 px-3 d-none d-md-block d-xl-none"
+        style=" z-index: -1; background: linear-gradient(174deg, rgba(31,120,189,1) 0%, rgba(14,55,87,1) 100%);">
+        <div class="d-flex flex-row justify-content-between px-2 mb-5">
+            <div class="d-flex flex-column align-items-center justify-content-between w-25">
+                <img src="./assets/logo new-01.png" class="img-fluid" alt="">
+                <div class="d-flex ">
+                    <a href="#" class="text-white mx-2"><i class="fab fa-linkedin fs-1"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-instagram fs-1"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-twitter fs-1"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook fs-1"></i></a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around gap-2 align-items-center ">
+                <div class="d-flex flex-column gap-1 align-items-start">
+                    <h3 class="mb-2 fw-bold fs-3 text-start">Other pages</h3>
+                    <a class="text-decoration-none text-white  text-start" href="">Home</a>
+                    <a class="text-decoration-none text-white  text-start" href="">About us</a>
+                    <a class="text-decoration-none text-white  text-start" href="">Our divisions</a>
+                    <a class="text-decoration-none text-white  text-start" href="">Contact us</a>
+                </div>
+                <div class="d-flex flex-column gap-1 align-items-start">
+                    <h3 class="mb-2 fw-bold fs-3 text-start">Quick Links</h3>
+                    <a class="text-decoration-none text-white  text-start" href="">Privacy policy</a>
+                    <a class="text-decoration-none text-white  text-start" href="">Terms and conditions</a>
+                    <a class="text-decoration-none text-white  text-start" href="">Disclimer</a>
+                    <a class="text-decoration-none text-white  text-start" href="">FAQ</a>
+                </div>
+                <div class="d-flex flex-column gap-1 align-items-start">
+                    <h3 class="mb-2 fw-bold fs-3 text-start">Contact Info</h3>
+                    <a class="text-decoration-none text-white  text-start" href="">info@brook-me.com</a>
+                    <a class="text-decoration-none text-white  text-start" href="">sales@brook-me.com</a>
+                    <a class="text-decoration-none text-white text-start" href="">Disclimer</a>
+                    <a class="text-decoration-none text-white text-start" href="">FAQ</a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-light mx-auto" style="width: 80%;">
+        <p class="mb-0">© Copyright 2024 All Rights Reserved by Brook-me</p>
+    </footer>
+
+    <!-- for mobile and other  -->
+    <footer class="bg-dark text-white text-center y-5 p-5 d-block d-md-none "
+        style=" z-index: -1; background: linear-gradient(174deg, rgba(31,120,189,1) 0%, rgba(14,55,87,1) 100%);">
+        <div class="d-flex flex-row justify-content-between px-2 mb-5 w-25">
+            <div class="d-flex flex-column align-items-between justify-content-between gap-5">
+                <img src="./assets/logo new-01.png" class="img-fluid" alt="">
+                <div class="d-flex ">
+                    <a href="#" class="text-white mx-3"><i class="fab fa-linkedin fs-1"></i></a>
+                    <a href="#" class="text-white mx-3"><i class="fab fa-instagram fs-1"></i></a>
+                    <a href="#" class="text-white mx-3"><i class="fab fa-twitter fs-1"></i></a>
+                    <a href="#" class="text-white mx-3"><i class="fab fa-facebook fs-1"></i></a>
+                </div>
+                <div class="d-flex flex-column gap-1 align-items-start">
+                    <h3 class="mb-2 fw-bold fs-3 text-start">Contact Info</h3>
+                    <a class="text-decoration-none text-white  text-start" href="">info@brook-me.com</a>
+                    <a class="text-decoration-none text-white  text-start" href="">sales@brook-me.com</a>
+                    <a class="text-decoration-none text-white text-start" href="">Disclimer</a>
+                    <a class="text-decoration-none text-white text-start" href="">FAQ</a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-light mx-auto" style="width: 80%;">
+        <p class="mb-0">© Copyright 2024 All Rights Reserved by Brook-me</p>
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+
+    <!-- Include the latest Bootstrap bundle (no need for jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const heroImage = document.getElementById('heroImage');
+            const heroCaption = document.getElementById('heroCaption');
+
+            // Array of images and captions
+            const content = [
+                { image: 'assets/home-page/hero1.jpg', caption: 'INNOVATION' },
+                { image: 'assets/home-page/hero2.jpg', caption: 'SUSTAINABILITY' },
+                { image: 'assets/home-page/hero3.jpg', caption: 'COLLABORATION' }
+            ];
+
+            let currentIndex = 0;
+
+            // Function to update image and caption with smooth fade effect
+            function updateHeroContent() {
+                heroImage.style.opacity = 0;  // Start fading out
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % content.length;  // Cycle through content
+                    heroImage.src = content[currentIndex].image;         // Change image source
+                    heroCaption.textContent = content[currentIndex].caption;  // Change caption
+                    heroImage.style.opacity = 1;  // Fade in new image
+                }, 1000);  // Wait for the fade out transition to complete
+            }
+
+            // Auto update every 4 seconds
+            setInterval(updateHeroContent, 4000);
+        });
+    </script>
+
+    <!-- CSS for Smooth Transitions -->
+    <style>
+        #heroImage {
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+    <script>
+        const scrollContainer = document.getElementById('scroll-container');
+        const scrollContent = document.getElementById('scroll-content');
+
+        // Scroll speed in pixels per frame
+        const scrollSpeed = 1;
+
+        // Continuous scrolling function
+        function autoScroll() {
+            scrollContainer.scrollLeft += scrollSpeed;
+
+            // When reaching the halfway point, reset scrollLeft to 0 for seamless loop
+            if (scrollContainer.scrollLeft >= scrollContent.scrollWidth / 2) {
+                scrollContainer.scrollLeft = 0;
+            }
+
+            requestAnimationFrame(autoScroll);
+        }
+
+        window.onload = function () {
+            requestAnimationFrame(autoScroll);
+        };
+    </script>
+
+</body>
+
+</html>
